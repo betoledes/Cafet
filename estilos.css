@@ -39,7 +39,7 @@ nav{
 
 .datoUsuario{
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	float: left;
 	margin-bottom: 20px;
 }
@@ -54,7 +54,7 @@ nav{
 	border-left: none;
 	border-top: none;
 	border-bottom: 1px solid #f1c40f;
-	height: 50px;
+	height: 70px;
 	width: calc(100% - 70px);
 	float: left;
 	font-size: 1em;
@@ -95,7 +95,7 @@ nav{
 
 .nuevaAccount{
 	width: calc(100% - 110px);
-	height: 32px;
+	height: 35px;
 	margin-top: 35px;
 	float: left;
 	margin-left: 55px;
