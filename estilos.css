@@ -1,14 +1,14 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Concert One', cursive;
+	font-family: 'Abel', sans-serif;
 }
 
 nav{
 	width: 100%;
 	height: 200px;
 	background: #f1c40f;
-	position: fixed;
+	position: absolute;
 }
 
 .bienvenida{
@@ -39,7 +39,7 @@ nav{
 
 .datoUsuario{
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	float: left;
 	margin-bottom: 20px;
 }
@@ -54,7 +54,7 @@ nav{
 	border-left: none;
 	border-top: none;
 	border-bottom: 1px solid #f1c40f;
-	height: 70px;
+	height: 40px;
 	width: calc(100% - 70px);
 	float: left;
 	font-size: 1em;
@@ -95,7 +95,7 @@ nav{
 
 .nuevaAccount{
 	width: calc(100% - 110px);
-	height: 35px;
+	height: 32px;
 	margin-top: 35px;
 	float: left;
 	margin-left: 55px;
@@ -152,32 +152,10 @@ nav{
 	text-align: center;
 }
 
-.registrosUsuarios{
+.registrosUsuario{
 	width: 100%;
 	top: 100px;
 	height: 100%;
-}
-
-.registroUsuario{
-	width: 100%;
-	height: 50px;
-	float: left;
-	margin-bottom: 20px;
-}
-
-.registroUsuario>input{
-	margin-bottom: 10px;
-	border-right: none;
-	border-left: none;
-	border-top: none;
-	border-bottom: 1px solid #f1c40f;
-	height: 50px;
-	width: calc(100% - 70px);
-	float: left;
-	font-size: 1em;
-	margin-left: 35px;
-	background-color: transparent;
-	outline: none;
 }
 
 .crearAccount{
@@ -192,6 +170,7 @@ nav{
 	font-size: 1.1em;
 	color: white;
 	background-color: #f1c40f;
+	margin-bottom: 20px;
 }
 
 .navegacion>h1{
@@ -202,11 +181,19 @@ nav{
 }
 
 .menu {
-	position: fixed;
 	height: 50px;
 	width: 100%;
-	background: #f1c40f;
-	bottom: 0px;
+	background: blue;
+	position: absolute;
+	top: calc(100% - 50px);
+}
+
+.resBusqueda{
+	width: 100%;
+	height: (100% - 50px);
+	position: fixed;
+	border-color: green;
+
 }
 
 .activo{
@@ -229,32 +216,88 @@ nav{
 	-webkit-filter:invert(100%) brightness(500%) saturate(0%);
 }
 
-.buscar{
-	outline: none;
-	border-right: 2px;
-	border-left: 2px;
-	border-top: none;
-	border-bottom: 2px solid white;
-	margin-top: 6px;
-	width: calc(100% - 50px);
-	height: 35px;
-	float: left;
-	margin-left: 25px;
-	text-align: center;
-	background-color: transparent;
-	color: white;
+.info{
+	width: 100%;
+	top: 50px;
+	height: 100%;
 }
 
-/*icono de búsqueda en la barra de buscar*/
-.icon img{
-	position: absolute;
-  	margin-left: 30px;
-  	margin-top: 15px;
-  	z-index: 1;
+.titulo1{
+	margin-top: 55px;
+	width: 100%;
+	height: 25px;
+	margin-top: 65px;
+	float: left;
+	text-align: center;
+}
+
+.titulo1>h1{
+	font-size: 1.2em;
+	color: #f1c40f;
+	text-align: center;
+}
+
+.cafes{
+	width: 100%;
+	height: 40px;
+	float: left;
+}
+
+.separar{
+	margin-top: 25px;
+}
+
+.colorear{
+	width: 10px;
+	height: 10px;
+	float: left;
+	padding-left: 20px;
+	color: rgba();
+}
+
+
+
+
+
+.busqueda{
+	width: 100%;
+	height: 45px;
+}
+
+.busqueda input#buscar{
+	width: calc(100% - 50px);
+  	height: 35px;
+  	margin-top: 6px;
+  	background: transparent;
+  	border: none;
+  	font-size: 1em;
   	float: left;
- 	-webkit-filter:invert(100%) brightness(500%) saturate(0%);
-  	width: 15px;
-  	height: 15px;
+  	margin-left: 23px;
+  	color: white;
+  	padding-left: 35px;
+  	border-right: none;
+  	border-left: none;
+  	border-top: none;
+  	border-bottom: 2px solid white;
+  	outline: none;
+}
+
+.busqueda input#buscar::-webkit-input-placeholder {
+   color: #ecf0f1;
+}
+/*icono de búsqueda en la barra de buscar*/
+.busqueda .icon{
+	position: absolute;
+  	top: -22%;
+  	margin-left: 25px;
+  	margin-top: 17px;
+  	z-index: 1;
+  	color: #4f5b66;
+}
+
+.busqueda img{
+	width: 20px;
+	height: 20px;
 }
 
 /*Corresponde a perfil del usuario*/
@@ -269,3 +312,4 @@ nav{
 	background-position: center center;
 	margin-top: 50px;
 }
+
